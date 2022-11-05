@@ -1,18 +1,5 @@
 #include "utils.h"
 
-static double	get_num_of_digits(int num)
-{
-	double	res;
-
-	res = 10;
-	while (num > 0)
-	{
-		res *= 10;
-		num /=10;
-	}
-	return (res);
-}
-
 double	get_double(char *str_double)
 {
 	double	res;

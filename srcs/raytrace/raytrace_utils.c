@@ -31,7 +31,7 @@ t_color	add_dif_ref_info(t_minirt_data *minirt, t_inter_point *point_of_object)
 	return (out_put_color);
 }
 
-static int	intersection(t_minirt_data *minirt, t_object *object, t_ray *ray, t_inter_point *inter_point)
+static int	intersection(t_object *object, t_ray *ray, t_inter_point *inter_point)
 {
 	if (object->type == SPHERE)
 		return (solve_sphere(ray, &object->object.sphere, inter_point));
@@ -52,7 +52,7 @@ int	get_nearest_object(t_minirt_data *minirt, t_ray *ray, t_inter_point *point_o
 	point_of_object->distance = INT_MAX;
 	while (cur_object)
 	{
-		res += intersection(minirt, cur_object, ray, point_of_object);
+		res += intersection(cur_object, ray, point_of_object);
 		cur_object = cur_object->next;
 	}
 	return (res);

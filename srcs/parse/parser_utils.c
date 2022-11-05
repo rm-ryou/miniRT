@@ -33,7 +33,6 @@ t_color	check_color(char *colors_str)
 	double	green;
 	double	blue;
 	char	**color_array;
-	t_color	color;
 
 	color_array = ft_split(colors_str, ',');
 	if (get_args_size(color_array) > 3)

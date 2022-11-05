@@ -48,7 +48,6 @@ static double	conditional_expre_sphere(t_ray *ray, t_sphere *sphere)
 
 int	solve_sphere(t_ray *ray, t_sphere *sphere, t_inter_point *inter_point)
 {
-	t_vector	point_of_ray_sphere;
 	double		distance;
 
 	distance = conditional_expre_sphere(ray, sphere);

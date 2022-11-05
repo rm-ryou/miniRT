@@ -12,6 +12,7 @@ static int	on_keydown(int keycode, t_minirt_data *minirt)
 {
 	if (keycode == 65307)
 		on_destroy(minirt);
+	return (0);
 }
 
 void	hooks(t_minirt_data *minirt)

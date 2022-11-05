@@ -11,9 +11,6 @@ int	get_shadow_ray(t_minirt_data *minirt, t_inter_point *point_of_object)
 
 t_color	launch_raytracing(t_minirt_data *minirt)
 {
-	int				is_nearest_object;
-	t_ray			shadow_ray;
-	t_object		nearest_object;
 	t_inter_point	point_of_object;
 	t_color			out_put_color;
 
@@ -45,7 +42,6 @@ void	raytrace(t_minirt_data *minirt)
 	double	x;
 	double	y;
 	t_color	out_put_color;
-	t_ray	ray;
 
 	x = 0;
 	while (x < W_DISPLAY)
