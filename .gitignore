@@ -1,0 +1,7 @@
+.vscode
+libft/*.o
+libft/*.a
+deps/*
+objs/*
+mlx_linux/obj/*
+miniRT
